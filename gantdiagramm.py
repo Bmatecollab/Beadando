@@ -4,8 +4,8 @@ import matplotlib.dates as mdates
 
 # Feladatok és időtartamok definiálása
 tasks = [
-    {"Task": "Adatok letöltése és előkészítése", "Start": "2024-11-01", "End": "2024-11-07"},
-    {"Task": "Adattisztítás", "Start": "2024-11-01", "End": "2024-11-07"},
+    {"Task": "Projekt tervezés", "Start": "2024-11-01", "End": "2024-11-07"},
+    {"Task": "Adatok letöltése és adattisztítás", "Start": "2024-11-03", "End": "2024-11-07"},
     {"Task": "Vizualizációk készítése", "Start": "2024-11-08", "End": "2024-11-14"},
     {"Task": "Regressziós modellek fejlesztése", "Start": "2024-11-15", "End": "2024-11-22"},
     {"Task": "Prezentáció és zárás", "Start": "2024-11-23", "End": "2024-11-30"}
@@ -32,7 +32,7 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
 ax.xaxis.set_major_locator(mdates.DayLocator(interval=5))
 plt.xticks(rotation=45)
 ax.invert_yaxis()
-ax.set_title("Projekt Gantt Diagram (2024)", fontsize=14)
+ax.set_title("IProgramozás alapjai beadandó", fontsize=14)
 ax.set_xlabel("Dátumok")
 ax.set_ylabel("Feladatok")
 plt.grid(axis="x", linestyle="--", alpha=0.7)
